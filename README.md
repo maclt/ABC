@@ -1,4 +1,4 @@
 # ABC
 AtCoder Beginner Contest
 
-毎日やるのが目標。
+開始日：2019/8/25
