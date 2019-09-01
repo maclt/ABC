@@ -4,19 +4,16 @@
 using namespace std;
 
 int main() {
-  int N;
-  long P, Q, R, S, P_tmp, Q_tmp, R_tmp, S_tmp;
-  long X, X_min, Y, Y_min, res, tmp_res;
+  int N, tmp;
+  long P, Q, R, S, P_tmp, Q_tmp, R_tmp, S_tmp, X, X_min, Y, Y_min, res, res_tmp;
   
   cin >> N;
-  
-  vector<int> A(N);
   vector<long> B(N+1);
   
   B[0] = 0;
   for(int i=0; i<N; i++) {
-    cin >> A[i];
-    B[i+1] = B[i] + A[i];
+    cin >> tmp;
+    B[i+1] = B[i] + tmp;
   }
   B.erase(B.begin());
   
@@ -31,6 +28,8 @@ int main() {
         X_min = X;
         P = P_tmp;
         Q = Q_tmp;
+      } else {
+        break;
       }
     }
     
@@ -43,11 +42,13 @@ int main() {
         Y_min = Y;
         R = R_tmp;
         S = S_tmp;
+      } else {
+        break;
       }
     }
-    tmp_res = max({abs(P-Q),abs(Q-R),abs(R-S),abs(P-R),abs(Q-S),abs(P-S)});
-    if(res > tmp_res) {
-      res = tmp_res;
+    res_tmp = max({P,Q,R,S})-min({P,Q,R,S});
+    if(res > res_tmp) {
+      res = res_tmp;
     }
   }
   cout << res << endl;
