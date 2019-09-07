@@ -1,20 +1,19 @@
 #include <iostream>
-#include <vector>
-#include <map>
+#include <unordered_map>
 using namespace std;
-
+ 
 int main() {
-  int N, M, tmp, mod, value;
-  long long sum, res;
-  map<int,int> MOD;
+  int N, M, tmp, mod;
+  long long res, value;
+  unordered_map<int,int> MOD;
   MOD[0] = 1;
   
   cin >> N >> M;
-  sum = 0;
+  mod = 0;
   for(int i=0; i<N; i++) {
     cin >> tmp;
-    sum += tmp;
-    mod = sum % M;
+    mod += tmp;
+    mod %= M;
     auto itr = MOD.find(mod); 
     if( itr != MOD.end() ) {
       MOD[mod] += 1;
