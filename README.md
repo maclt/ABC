@@ -1,4 +1,11 @@
 # ABC
 AtCoder Beginner Contest
 
-開始日：2019/8/25
+## I joined
+2019/8/25~
+
+## participated in
+139 140
+
+## Couldn't understand
+101-D 107-D
