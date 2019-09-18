@@ -7,12 +7,18 @@
 ## 104-C
 bit mask
 
+## 104-D
+DPの典型例
+
 ## 107-D
 転倒数(inversion number)
 =>binary index treeで実装する 
 
 ## 108-D
 あるNに対してN*2とN+1の漸化式を作ることで、全部のノードを示すことができる。
+
+## 109-C
+最大公約数の求め方
 
 ## 110-D
 Combinationの求め方
@@ -22,6 +28,13 @@ nCr = n! * r!^(-1) * (n-r)!^(-1) http://drken1215.hatenablog.com/entry/2018/06/0
 ## 112-C
 オーダーを見て全探索をすること。
 
+## 113-C
+構造体をうまく使ったsort
+
+## 113-D
+動的計画法とbitマスクの応用
+
 ## 141-D
 floor(floor(N/2)/2) = floor(N/2^2)
+
 優先度付きキュー
