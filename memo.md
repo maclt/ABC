@@ -40,6 +40,9 @@ nCr = n! * r!^(-1) * (n-r)!^(-1) http://drken1215.hatenablog.com/entry/2018/06/0
 ## 114-D
 素因数分解の方法（試し割り）
 
+## 115-D
+再帰関数
+
 ## 141-D
 floor(floor(N/2)/2) = floor(N/2^2)
 
