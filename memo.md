@@ -43,6 +43,9 @@ nCr = n! * r!^(-1) * (n-r)!^(-1) http://drken1215.hatenablog.com/entry/2018/06/0
 ## 115-D
 再帰関数
 
+## 118-C
+ユークリッドの互除法
+
 ## 141-D
 floor(floor(N/2)/2) = floor(N/2^2)
 
