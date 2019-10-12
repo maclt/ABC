@@ -52,6 +52,9 @@ nCr = n! * r!^(-1) * (n-r)!^(-1) http://drken1215.hatenablog.com/entry/2018/06/0
 ## 119-D
 二分木探索を使う。関数を使うと遅くなる。
 
+## 120-D
+UnionFindデータ構造 特にUniteをするときの層の深さを浅くすること
+
 ## 141-D
 floor(floor(N/2)/2) = floor(N/2^2)
 
