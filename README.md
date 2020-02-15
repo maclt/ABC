@@ -9,3 +9,6 @@ AtCoder Beginner Contest
 
 ## Couldn't understand
 101-D 107-D 111-D 116-D
+
+## Not yet solved
+121-D 122-D
