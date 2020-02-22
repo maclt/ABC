@@ -59,3 +59,6 @@ UnionFindデータ構造 特にUniteをするときの層の深さを浅くす�
 floor(floor(N/2)/2) = floor(N/2^2)
 
 優先度付きキュー
+
+## 156-D
+mod計算 累乗/二項係数
