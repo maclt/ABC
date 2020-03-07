@@ -7,9 +7,11 @@ int main() {
   bool order = true;
   
   deque<char> S;
+  char s;
   int Q;
-  cin >> S;
+  cin >> s;
   cin >> Q;
+  S.push_front(s);
   
   int T = 0;
   int F = 0;
@@ -31,11 +33,11 @@ int main() {
   }
   
   if(order) {
-    for(auto itr = v.begin(); itr != v.end(); ++itr) {
+    for(auto itr = S.begin(); itr != S.end(); ++itr) {
         cout << *itr;
     }
   } else {
-    for(auto itr = v.rbegin(); itr != v.rend(); ++itr) {
+    for(auto itr = S.rbegin(); itr != S.rend(); ++itr) {
         cout << *itr;
     }
   }
