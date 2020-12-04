@@ -62,3 +62,6 @@ floor(floor(N/2)/2) = floor(N/2^2)
 
 ## 156-D
 mod計算 累乗/二項係数
+
+## 158-D
+deque(両端キュー)

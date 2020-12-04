@@ -1,21 +1,21 @@
 #include <iostream>
-#include <algorithm>
 #include <deque>
+#include <algorithm>
 using namespace std;
  
 int main() {
   bool order = true;
   
-  deque<char> S;
-  char s;
+  string S;
   int Q;
-  cin >> s;
-  cin >> Q;
-  S.push_front(s);
+  cin >> S >> Q;
   
   int T = 0;
   int F = 0;
   char C;
+  deque<char> L;
+  deque<char> R;
+  
   for(int i=0; i<Q; i++) {
     cin >> T;
     // Ti = 1の時
@@ -26,18 +26,30 @@ int main() {
     // Ti = 2の時
     cin >> F >> C;
     if((F==1 && order==true) || (F==2 && order==false)) {
-      S.push_front(C);
+      L.push_front(C);
     } else {
-      S.push_back(C);
+      R.push_back(C);
     }
   }
   
   if(order) {
+    for(auto itr = L.begin(); itr != L.end(); ++itr) {
+        cout << *itr;
+    }
     for(auto itr = S.begin(); itr != S.end(); ++itr) {
         cout << *itr;
     }
+    for(auto itr = R.begin(); itr != R.end(); ++itr) {
+        cout << *itr;
+    }
   } else {
+    for(auto itr = R.rbegin(); itr != R.rend(); ++itr) {
+        cout << *itr;
+    }
     for(auto itr = S.rbegin(); itr != S.rend(); ++itr) {
+        cout << *itr;
+    }
+    for(auto itr = L.rbegin(); itr != L.rend(); ++itr) {
         cout << *itr;
     }
   }
